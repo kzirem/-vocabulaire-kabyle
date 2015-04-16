@@ -1,0 +1,47 @@
+<ons-page>
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Animaux, insectes et oiseaux </div>
+    </ons-toolbar>
+    <input type="search" class="search-input" style="width: 96%; margin: 6px auto 6px auto;" placeholder="Search" ng-model="q">
+
+    <div style="text-align: center" 
+    ng-init="animals =[
+                        { namekabyle: 'Tizizwit', namefrancais: 'Abeille',nameanglais: 'Bee' },
+                        { namekabyle: 'Izimer', namefrancais: 'Agneau' ,nameanglais: 'Lamb'},
+                        { namekabyle: 'Tizimert', namefrancais: 'Agnelle',nameanglais: 'Ewe lamb' },
+                        { namekabyle: 'Lbaz, igider', namefrancais: 'Aigle',nameanglais: 'Eagle' },
+                        { namekabyle: 'Aγyul', namefrancais: 'Ane',nameanglais: 'Donkey' },
+                        { namekabyle: 'Azger', namefrancais: 'Boeuf',nameanglais: 'Beef' },
+                        { namekabyle: 'Aqelwac', namefrancais: 'Bouc',nameanglais: 'Goat' },
+                        { namekabyle: 'Tixsi', namefrancais: 'Brebis',nameanglais: 'Sheep' },
+                        { namekabyle: 'Uccen', namefrancais: 'Chacal',nameanglais: 'Jackal' },
+                        { namekabyle: 'Alγ°em', namefrancais: 'Chameau',nameanglais: 'Camel' }
+                      ]">       
+            <ons-list>
+            <ons-list-item  class="list-item-container" ng-repeat="animal in animals | filter:q as results">
+              <ons-row>
+                <ons-col width="30%">
+                  <img src="images/{{animal.namefrancais}}.png" class="thumbnail">
+                </ons-col>
+                <ons-col>
+                  <div class="name">
+                     {{animal.namekabyle}}
+                  </div></br>              
+                  <div class="name2">
+                    {{animal.namefrancais}}
+                  </div></br>  
+                  <div class="name3">
+                    {{animal.nameanglais}}
+                  </div> 
+                </ons-col>
+               
+              </ons-row>
+            </ons-list-item>
+        </ons-list>
+        
+    </div>
+
+</ons-page>

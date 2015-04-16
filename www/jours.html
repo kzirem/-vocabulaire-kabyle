@@ -1,0 +1,45 @@
+<ons-navigator>
+   <ons-page>
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+            </div>
+            <div class="center">Ussan || Jours || Days</div>
+        </ons-toolbar>
+        
+        <div style="text-align: center" 
+    
+    ng-init="animals =[
+                        { namekabyle: 'Letnayen', namefrancais: 'Lundi',nameanglais: 'Monday'},
+                        { namekabyle: 'Ttlata', namefrancais: 'Mardi' ,nameanglais: 'Tuesday'},
+                        { namekabyle: 'laṛebεa ', namefrancais: 'Mercredi',nameanglais: 'Wednesday' },
+                        { namekabyle: 'lexmis', namefrancais: 'Jeudi',nameanglais: 'Thursday' },
+                        { namekabyle: 'lğemεa', namefrancais: 'Vendredi',nameanglais: 'Friday' },
+                        { namekabyle: 'ssebt', namefrancais: 'Samedi',nameanglais: 'Saturday' },
+                        { namekabyle: 'lḥedd', namefrancais: 'Dimanche',nameanglais: 'Sunday' }
+                        
+                      ]">   
+                      
+                            
+            <ons-list>
+            <ons-list-item  class="list-item-container" ng-repeat="animal in animals | filter:q as results">
+              <ons-row>
+                <ons-col>
+                  <div class="name">
+                     {{animal.namekabyle}}
+                  </div></br>              
+                  <div class="name2">
+                    {{animal.namefrancais}}
+                  </div></br>  
+                  <div class="name3">
+                    {{animal.nameanglais}}
+                  </div> 
+                </ons-col>
+               
+              </ons-row>
+            </ons-list-item>
+        </ons-list>
+        
+    </div>
+
+</ons-page>

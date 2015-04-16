@@ -1,0 +1,32 @@
+.list-item-container {
+  line-height: 1;
+  padding: 15px 0px 15px 15px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  border:solid;
+ 
+  -webkit-border-radius: 4px;
+}
+.name {
+  font-weight: 900;
+  line-height: 16px;
+  font-size: 18px;
+  
+}
+.name2 {
+  font-weight: 900;
+  line-height: 16px;
+  font-size: 18px;
+  color: #0739DD;
+}
+.name3 {
+  font-weight: 900;
+  line-height: 16px;
+  font-size: 18px;
+  color: #59A440;
+}
+
