@@ -1,7 +1,5 @@
 <ons-page style="background-color: white">
-
     <ons-list>
-
         <ons-list-item
             modifier="tappable" class="list__item__line-height"
             onclick="app.slidingMenu.setMainPage('page1.html', {closeMenu: true})">
@@ -22,10 +20,21 @@
         </ons-list-item>
         <ons-list-item
             modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('mois.html', {closeMenu: true})">
+            <i class="fa fa-calendar" style="color: #666"></i>
+            &nbsp; Les Mois
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
             onclick="app.slidingMenu.setMainPage('legumes.html', {closeMenu: true})">
             <i class="fa fa-leaf" style="color: #666"></i>
             &nbsp; Les Légumes
         </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('couleurs.html', {closeMenu: true})">
+            <i class="fa fa fa-font" style="color: #666"></i>
+            &nbsp; Les Couleurs
+        </ons-list-item>         
     </ons-list>
-
 </ons-page>

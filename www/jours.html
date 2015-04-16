@@ -4,12 +4,11 @@
             <div class="left">
                 <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
             </div>
-            <div class="center">Ussan || Jours || Days</div>
+            <div class="center">Les jours de semaine</div>
         </ons-toolbar>
         
-        <div style="text-align: center" 
-    
-    ng-init="animals =[
+        <div style="text-align: center" ng-init="animals =
+                      [
                         { namekabyle: 'Letnayen', namefrancais: 'Lundi',nameanglais: 'Monday'},
                         { namekabyle: 'Ttlata', namefrancais: 'Mardi' ,nameanglais: 'Tuesday'},
                         { namekabyle: 'laṛebεa ', namefrancais: 'Mercredi',nameanglais: 'Wednesday' },
@@ -17,10 +16,7 @@
                         { namekabyle: 'lğemεa', namefrancais: 'Vendredi',nameanglais: 'Friday' },
                         { namekabyle: 'ssebt', namefrancais: 'Samedi',nameanglais: 'Saturday' },
                         { namekabyle: 'lḥedd', namefrancais: 'Dimanche',nameanglais: 'Sunday' }
-                        
-                      ]">   
-                      
-                            
+                      ]">               
             <ons-list>
             <ons-list-item  class="list-item-container" ng-repeat="animal in animals | filter:q as results">
               <ons-row>
